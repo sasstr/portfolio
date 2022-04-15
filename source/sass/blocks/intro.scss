@@ -1,0 +1,32 @@
+.intro-wrapper {
+  background-image: url('/img/web-design.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(16px 16px 20px rgb(172, 171, 171));
+  border-radius: 7px;
+}
+
+// .subheading{
+//   margin: 0;
+//   padding: 0;
+// }
+
+.subheading-blur {
+  width: 450px;
+  text-shadow: 0 0 5px #999;
+  color: transparent;
+  transition: all .5s;
+}
+
+.subheading-blur:hover {
+  text-shadow: 0 0 0 #333;
+}
+
+.intro {
+  margin-bottom: 50px;
+} 
+
+.title {
+  margin: 30px 0;
+  padding: 0;
+}

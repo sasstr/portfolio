@@ -1,0 +1,19 @@
+.page-main {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 50px 50px 0;
+}
+
+@media (max-width: 768px) {
+  .page-main {
+    width: 768px;
+    padding: 30px 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-main {
+    width: 480px;
+    padding: 20px 20px 0;
+  }
+}

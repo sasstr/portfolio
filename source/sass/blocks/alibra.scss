@@ -1,0 +1,18 @@
+.alibra-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.alibra {
+  width: 450px;
+}
+
+.alibra-title {
+  min-height: 90px;
+}
+
+.alibra-image:hover {
+  box-shadow: 9px 8px 8px -2px rgb(34 60 80 / 21%);
+}

@@ -1,0 +1,18 @@
+.page-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  color: #fff;
+  font-weight: 700;
+  min-height: 120px;
+  padding: 10px;
+  background: linear-gradient(228deg, #c33d9f 20%, #254891 100%, #000 100%);background: linear-gradient(228deg, #c33d9f 20%, #254891 100%, #000 100%);
+}
+
+.footer-link {
+  color: #c3f7ef;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.card-list {
+  font-size: 14px;
+  line-height: 19px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-title {
+  font-weight: 200;
+}
+
+.card-image:hover {
+  box-shadow: 9px 8px 8px -2px rgb(34 60 80 / 21%);
+}

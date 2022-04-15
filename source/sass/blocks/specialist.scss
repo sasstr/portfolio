@@ -1,0 +1,14 @@
+.specialist-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.specialist {
+  width: 450px;
+}
+
+.specialist-image:hover {
+  box-shadow: 9px 8px 8px -2px rgb(34 60 80 / 21%);
+}
