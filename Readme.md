@@ -5,7 +5,7 @@
 * Запустить проект в режиме разработки ```npm start ```
 * Собрать проект ```npm build ```
 <hr>
-<img src="build/img/sasstr.jpg" alt="Моя фотка" width="260" >
+<img src="source/img/sasstr.jpg" alt="Моя фотка" width="260" >
 <hr>
 
 ## <b>Навыки</b>
@@ -29,5 +29,5 @@
 * English
 * Менеджмент
 <hr>
-<img src="build/img/web-design.jpeg" alt="Заставка - код" width="700" >
+<img src="source/img/web-design.jpeg" alt="Заставка - код" width="700" >
 
