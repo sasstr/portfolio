@@ -8,11 +8,11 @@ const closeBtn = modal.querySelector('.close');
 const navigationList = document.querySelector('.navigation-list'); 
 
 navigationList.addEventListener('click', function(evt) {
-  link = evt.target;
+  const link = evt.target;
   if(link.classList.contains('navigation-link')){
     evt.preventDefault();
     target = document.querySelector(link.hash);
-    let position = target.offsetTop -30;
+    const position = target.offsetTop -30;
     window.scrollTo({
       top: position,
       behavior: 'smooth',
