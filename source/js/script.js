@@ -5,7 +5,20 @@ const modal = document.querySelector('.modal');
 const modalImg = modal.querySelector('.modal-content');
 const captionText = modal.querySelector('#caption');
 const closeBtn = modal.querySelector('.close');
+const navigationList = document.querySelector('.navigation-list'); 
 
+navigationList.addEventListener('click', function(evt) {
+  link = evt.target;
+  if(link.classList.contains('navigation-link')){
+    evt.preventDefault();
+    target = document.querySelector(link.hash);
+    let position = target.offsetTop -30;
+    window.scrollTo({
+      top: position,
+      behavior: 'smooth',
+    })
+  }
+});
 /** Функция показывает модальное окно и помещает в него картинку, по которой кликает пользователь.
  * 
  * @param {string} event 
