@@ -7,12 +7,25 @@ const captionText = modal.querySelector('#caption');
 const closeBtn = modal.querySelector('.close');
 const navigationList = document.querySelector('.navigation-list'); 
 const btnUp = document.querySelector('.btn-up');
+const links = navigationList.querySelectorAll('.navigation-link');
 
 window.addEventListener('scroll', function(){
   let scrollPosition = window.pageYOffset
   scrollPosition > window.innerHeight ? 
     btnUp.classList.remove('btn-up-visible') :
     btnUp.classList.add('btn-up-visible');
+
+    for(let i = links.length - 1; i>=0; i--){
+      const link = links[i];
+      const target = document.querySelector(link.hash);
+
+      if(scrollPosition + window.innerHeight/2 > target.offsetTop){
+        navigationList.querySelector('.navigation-link--active').
+        classList.remove('navigation-link--active');
+        link.classList.add('navigation-link--active');
+        break;
+      };
+    };
 });
 
 btnUp.addEventListener('click', function(){

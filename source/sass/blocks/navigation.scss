@@ -14,12 +14,11 @@
   margin: 0 auto;
 }
 
-// .navigation-item {
-//   position: relative;
-// }
+.navigation-item {
+  position: relative;
+}
 
 .navigation-link {
-  position: relative;
   font-size: 14px;
   line-height: 18px;
   color: #e3e3e3;
@@ -30,7 +29,7 @@
   font-weight: 700;
 }
 
-.navigation-link::before:hover {
+.navigation-link--active::before:hover {
   position: absolute;
   content: '';
   left: 0;
@@ -41,7 +40,13 @@
   background-color: #bee6f9;
   border-bottom: 5px solid #575fee;
 }
-.navigation-link:active {
-  color: #bee6f9;
-  font-weight: 700;
+
+.navigation-link--active {
+  color: rgb(233, 231, 222);
+  font-weight: bold;
+}
+
+.navigation-link--active:hover {
+  color: rgb(250, 250, 250);
+  font-weight: bold;
 }
