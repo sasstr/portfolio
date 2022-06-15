@@ -6,6 +6,21 @@ const modalImg = modal.querySelector('.modal-content');
 const captionText = modal.querySelector('#caption');
 const closeBtn = modal.querySelector('.close');
 const navigationList = document.querySelector('.navigation-list'); 
+const btnUp = document.querySelector('.btn-up');
+
+window.addEventListener('scroll', function(){
+  let scrollPosition = window.pageYOffset
+  scrollPosition > window.innerHeight ? 
+    btnUp.classList.remove('btn-up-visible') :
+    btnUp.classList.add('btn-up-visible');
+});
+
+btnUp.addEventListener('click', function(){
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
 
 navigationList.addEventListener('click', function(evt) {
   const link = evt.target;

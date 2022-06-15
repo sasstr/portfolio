@@ -40,7 +40,24 @@ img {
 
 .portfolio {
   margin-bottom: 50px;
-} 
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(144, 197, 216);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-up-visible {
+  display: none;
+}
 
 .visually-hidden {
   position: absolute;
