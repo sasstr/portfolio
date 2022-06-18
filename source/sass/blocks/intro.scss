@@ -1,9 +1,20 @@
 .intro-wrapper {
+  position: relative;
   background-image: url('/img/web-design.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   filter: drop-shadow(16px 16px 20px rgb(172, 171, 171));
   border-radius: 7px;
+  border-top-right-radius: 0;
+}
+
+.intro-wrapper::before {
+  position: absolute;
+  content: 'Александр Страховенко - Веб-разработчик';
+  top: 20px;
+  left: 330px;
+  color: aliceblue;
+  font-weight: bold;
 }
 
 .subheading-blur {

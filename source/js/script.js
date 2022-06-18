@@ -55,7 +55,7 @@ navigationList.addEventListener('click', function(evt) {
  * @returns {void}
  */
 const showModal = function (event, className, widthImage = 500) {
-  
+
   if(event.target.classList.contains(className)){
     event.preventDefault();
     modal.style.display = "block";
